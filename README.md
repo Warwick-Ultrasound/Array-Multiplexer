@@ -12,4 +12,5 @@ Sends commands to the multiplexer to set the upstream/downstream direction and t
 - updown: Takes value 0 or 1 to indicate whether to take an upstream or downstream measurement.
 - trans1: Takes a value between 0 and 7 (inclusive) to choose a transducer in ring 1.
 - trans2: Takes a value between 0 and 7 (inclusive) to choose a transducer in ring 2.
+
 The function also checks that the multiplexer reports that it has responded to the command, and sets the flag to 1 to indicate success (and 0 otherwise). diag is an empty string if the write was successful, but if it was unsuccessful it contains the diagnostic information from the multiplexer to indicate why it failed.
